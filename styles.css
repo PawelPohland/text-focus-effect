@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff0057, #2196f3);
+}
+
+h2 {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  color: #fff;
+  font-size: 5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+h2 span {
+  position: relative;
+  filter: blur(5px);
+  padding: 0 5px;
+  transition: 0.5s;
+}
+
+h2 span:hover {
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+h2 span i {
+  background: transparent;
+  position: absolute;
+  inset: 0;
+}
+
+h2 span:hover i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 8px;
+  background-color: #fff;
+  box-shadow: 55px 0 #fff, 55px 85px #fff, 0 85px #fff;
+}
+
+h2 span:hover i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  box-shadow: 0 91px #fff, 49px 91px #fff, 49px 0 #fff;
+}

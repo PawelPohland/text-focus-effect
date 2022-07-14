@@ -1,9 +1,10 @@
 # Text focus effect.
 
-## Blured text with focus while hovered over.
+## Blured text with focus when hovered over.
 
 - displays blured text
 - text become visible on hover
+- frame around hovered letters
 
 ## Technologies used
 
